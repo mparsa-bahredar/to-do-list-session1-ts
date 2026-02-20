@@ -5,6 +5,8 @@ export interface Task {
   completed: boolean;
   priority: 'High' | 'Medium' | 'Low';
   category: string;
+  startTime?: number;
+  endTime?: number;
 }
 
 const DEFAULT_CATEGORIES = [
